@@ -1,0 +1,93 @@
+@import "mocha.css";
+
+* {
+    font-family: JetBrainsMono Nerd, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+}
+
+window#waybar {
+    background: alpha(@mantle,0.6);
+}
+
+button {
+    color: @rosewater;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+#workspaces {
+    border: 2px solid @rosewater;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+.modules-center {
+    margin: 0 4px;
+}
+
+#workspaces,
+#custom-msi,
+#clock,
+#temperature,
+#cpu,
+#memory,
+#disk,
+#network,
+#battery {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0 4px;
+}
+
+#custom-msi {
+    border: 2px solid @flamingo;
+    color: @flamingo;
+}
+
+#clock {
+    border: 2px solid @mauve;
+    color: @mauve;
+}
+
+#temperature {
+    border: 2px solid @maroon;
+    color: @maroon;
+}
+
+#cpu {
+    border: 2px solid @peach;
+    color: @peach;
+}
+
+#memory {
+    border: 2px solid @teal;
+    color: @teal;
+}
+
+#disk {
+    border: 2px solid @sky;
+    color: @sky;
+}
+
+#network {
+    border: 2px solid @sapphire;
+    color: @sapphire;
+}
+
+#battery {
+    border: 2px solid @lavender;
+    color: @lavender;
+}
